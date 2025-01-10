@@ -1,0 +1,25 @@
+name = "administer_org/ui_components"
+version = "0.1.0"
+description = "Open source UI components used to build Administer."
+authors = ["FloofyPlasma", "pyxfluff"]
+repository = "https://github.com/administer-org/ui-components"
+license = "AGPL-3.0"
+
+[target]
+environment = "roblox"
+lib = "src/init.luau"
+build_files = ["src"]
+
+[indices]
+default = "https://github.com/pesde-pkg/index"
+
+[scripts]
+roblox_sync_config_generator = ".pesde/scripts/roblox_sync_config_generator.luau"
+sourcemap_generator = ".pesde/scripts/sourcemap_generator.luau"
+
+[dev_dependencies]
+scripts = { name = "pesde/scripts_rojo", version = "^0.1.0", target = "lune" }
+rojo = { name = "pesde/rojo", version = "^7.4.4", target = "lune" }
+
+[dependencies]
+ui = { name = "lumin/ui", version = "^0.3.0-rc6" }
