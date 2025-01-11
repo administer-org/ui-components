@@ -1,0 +1,21 @@
+{
+    "name": "ui-components",
+    "serveAddress": "0.0.0.0",
+    "tree": {
+		"$className": "DataModel",
+		"ReplicatedStorage": {
+			"components": {
+				"$className": "Folder",
+				"src": {
+					"$path": "src"
+				},
+                "roblox_packages": {
+                    "$path": "roblox_packages"
+                }
+			},
+            "storybook": {
+                "$path": "storybook"
+            }
+		}
+    }
+  }
