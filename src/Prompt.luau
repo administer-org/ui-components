@@ -1,6 +1,7 @@
 local MainParent = script.Parent
 local Packages = MainParent.Parent.roblox_packages
 local Types = require(MainParent.Types)
+local GenerateName = require(MainParent.GenerateName)
 local UI = require(Packages.ui)
 local New = UI.New
 local Spring = UI.Spring

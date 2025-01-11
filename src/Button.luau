@@ -1,6 +1,7 @@
 local MainParent = script.Parent
 local Packages = MainParent.Parent.roblox_packages
 local Types = require(MainParent.Types)
+local GenerateName = require(MainParent.GenerateName)
 local UI = require(Packages.ui)
 local New = UI.New
 local Spring = UI.Spring
@@ -50,7 +51,7 @@ return function(Properties: Types.ButtonProperties): (Types.Button)
 		ScaleType = Enum.ScaleType.Fit,
 		Position = Properties.Position,
 		BackgroundColor3 = Color3.fromRGB(40, 40, 52),
-		Name = `Btn_{string.gsub(Properties.Icon, "rbxassetid://", "")}_{math.random(1,250)}`,
+		Name = GenerateName("Btn"),
 		Image = "rbxassetid://0",
 		Size = (Properties.Size or UDim2.new(0.07, 0, 0.68, 0)),
 		BackgroundTransparency = ButtonTransparencySpring,
