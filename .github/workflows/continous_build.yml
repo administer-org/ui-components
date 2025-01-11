@@ -34,7 +34,7 @@ jobs:
             - name: Release
               uses: softprops/action-gh-release@v2.2.1
               with:
-                tag_name: Continous Build
+                tag_name: CB
                 name: Continous Build
                 prerelease: true
                 generate_release_notes: true
