@@ -1,6 +1,8 @@
+<div align="center">
 <img src="https://github.com/administer-org/ui-components/blob/main/assets/adm.png?raw=true" width="128">
 
 # Administer UI Components
+</div>
 
 [![Continuous Build Status](https://github.com/administer-org/ui-components/actions/workflows/continuous_build.yml/badge.svg)](https://github.com/administer-org/ui-components/releases/tag/CB)
 
