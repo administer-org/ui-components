@@ -1,4 +1,4 @@
-name = "administer_org/ui_components"
+name = "administer/ui_components"
 version = "0.1.0"
 description = "Open source UI components used to build Administer."
 authors = ["FloofyPlasma", "pyxfluff"]
