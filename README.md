@@ -1,6 +1,8 @@
-# ![Administer Logo|65%](assets/adm.png) Administer UI Components
+<img src="https://github.com/administer-org/ui-components/blob/main/assets/adm.png?raw=true" width="128">
 
-![Continuous Build Status](https://github.com/administer-org/actions/workflows/continuous_build.yml/badge.svg)
+# Administer UI Components
+
+[![Continuous Build Status](https://github.com/administer-org/ui-components/actions/workflows/continuous_build.yml/badge.svg)](https://github.com/administer-org/ui-components/releases/tag/CB)
 
 Welcome to the UI components repository! This is where you'll find all of Administer's internal UI components for use in apps.
 
