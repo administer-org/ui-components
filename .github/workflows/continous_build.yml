@@ -27,10 +27,6 @@ jobs:
             - name: Build
               run: rojo build build.project.json --output ./ui-components.rbxm
 
-            - name: Get Timestamp
-              id: date
-              run: echo "::set-output name=current_datetime::$(date +'%Y-%m-%d %H:%M:%S')"
-
             - name: Release
               uses: softprops/action-gh-release@v2.2.1
               with:
@@ -39,7 +35,7 @@ jobs:
                 prerelease: true
                 generate_release_notes: true
                 body: |
-                  Build created at ${{ steps.date.outputs.current_date }}
+                  Build created at ${{ github.event.repository.updated_at }}
                   Latest commit: ${{ github.sha }}
                 files: |
                  ./ui-components.rbxm
