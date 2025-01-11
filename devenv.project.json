@@ -11,11 +11,11 @@
 				},
                 "roblox_packages": {
                     "$path": "roblox_packages"
+                },
+                "storybook": {
+                    "$path": "storybook"
                 }
-			},
-            "storybook": {
-                "$path": "storybook"
-            }
+			}
 		}
     }
   }
