@@ -8,7 +8,7 @@ local State = UI.State
 local Event = UI.Event
 local Cleanup = UI.Cleanup
 
-return function(Properties: Types.ButtonProperties): ({Instance: ImageButton, Destroy: () -> ()})
+return function(Properties: Types.ButtonProperties): (Types.Button)
     local IconSizeState = State(UDim2.fromScale(0.22, 0.34))
     local IconSizeSpring = Spring(IconSizeState, 0.5, 5)
 
@@ -134,7 +134,7 @@ return function(Properties: Types.ButtonProperties): ({Instance: ImageButton, De
         Instance = Button,
 
         Destroy = function()
-            Cleanup({IconSizeState, IconSizeSpring, TextPositionState, TextPositionSpring, ButtonTransparencyState, ButtonTransparencySpring, StrokeThicknessState, StrokeThicknessSpring, Button, SubIcon ~= nil and SubIcon})
+            Cleanup({IconSizeState, IconSizeSpring, TextPositionState, TextPositionSpring, ButtonTransparencyState, ButtonTransparencySpring, StrokeThicknessState, StrokeThicknessSpring, SubIcon ~= nil and SubIcon, Button})
         end
     }
 end
