@@ -2,9 +2,13 @@
 <img src="https://github.com/administer-org/ui-components/blob/main/assets/adm.png?raw=true" width="128">
 
 # Administer UI Components
-</div>
 
-[![Continuous Build Status](https://github.com/administer-org/ui-components/actions/workflows/continuous_build.yml/badge.svg)](https://github.com/administer-org/ui-components/releases/tag/CB)
+
+[![administer-org - ui-components](https://img.shields.io/static/v1?label=administer-org&message=ui-components&color=yellow&logo=github)](https://github.com/administer-org/ui-components "Go to GitHub repo") [![stars - ui-components](https://img.shields.io/github/stars/administer-org/ui-components?style=social)](https://github.com/administer-org/ui-components) [![forks - ui-components](https://img.shields.io/github/forks/administer-org/ui-components?style=social)](https://github.com/administer-org/ui-components) [![Continuous Build](https://github.com/administer-org/ui-components/workflows/Continuous%20Build/badge.svg)](https://github.com/administer-org/ui-components/actions?query=workflow:"Continuous+Build")
+
+ [![GitHub tag](https://img.shields.io/github/tag/administer-org/ui-components?include_prereleases=&sort=semver&color=yellow)](https://github.com/administer-org/ui-components/releases/) [![License](https://img.shields.io/badge/License-AGPL--3.0-yellow)](#license) [![issues - ui-components](https://img.shields.io/github/issues/administer-org/ui-components)](https://github.com/administer-org/ui-components/issues) [![Hits-of-Code](https://hitsofcode.com/github/administer-org/ui-components?branch=main)](https://hitsofcode.com/github/administer-org/ui-components/view?branch=main)
+
+</div>
 
 Welcome to the UI components repository! This is where you'll find all of Administer's internal UI components for use in apps.
 
