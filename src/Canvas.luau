@@ -11,7 +11,7 @@ local Cleanup = UI.Cleanup
 
 return function(Properties: Types.CanvasProperties): (Types.Canvas)
     local Canvas = New "CanvasGroup" {
-        Name = GenerateName("Canvas"),
+        Name = GenerateName(Properties.Name or "Canvas"),
 
         BackgroundColor3 = Properties.BackgroundColor,
         Size = Properties.Size,

@@ -18,25 +18,27 @@ export type Button = {
 
 export type CanvasProperties = {
     -- Special Properties
-    Rounding: UDim2 | UI.Spring | nil,
+    Rounding: UDim | typeof(UI.Spring(...)) | nil,
     Stroke: {
         Color: Color3,
-        Thickness: number | UI.Spring,
+        Thickness: number | typeof(UI.Spring(...)),
     }?,
 
     -- Basic Properties
+    Name: string?,
     BackgroundColor: Color3,
-    Size: UDim2 | UI.Spring,
-    Position: UDim2 | UI.Spring,
+    Size: UDim2 | typeof(UI.Spring(...)),
+    Position: UDim2 | typeof(UI.Spring(...)),
     BorderSizePixel: number?,
     AnchorPoint: Vector2?,
-    GroupTransparency: number | UI.Spring | nil,
+    GroupTransparency: number | typeof(UI.Spring(...)) | nil,
 }
 
 export type Canvas = CanvasGroup
 
 export type PrompProperties = {
     HeaderLabel: string,
+    PromptTitle: string,
     BodyText: string,
 
     BigIcon: string?,
