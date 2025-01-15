@@ -36,6 +36,27 @@ export type CanvasProperties = {
 
 export type Canvas = CanvasGroup
 
+export type FrameProperties = {
+    -- Special Properties
+    Rounding: UDim | typeof(UI.Spring(...)) | nil,
+    Stroke: {
+        Color: Color3,
+        Thickness: number | typeof(UI.Spring(...)),
+    }?,
+
+    -- Basic Properties
+    Name: string?,
+    BackgroundColor: Color3,
+    Size: UDim2 | typeof(UI.Spring(...)),
+    Position: UDim2 | typeof(UI.Spring(...)),
+    BorderSizePixel: number?,
+    AnchorPoint: Vector2?,
+    Transparency: number | typeof(UI.Spring(...)) | nil,
+}
+
+-- TODO (FloofyPlasma): This is probably redundant currently, which is why its commented out.
+-- export type Frame = Frame
+
 export type PrompProperties = {
     HeaderLabel: string,
     PromptTitle: string,
