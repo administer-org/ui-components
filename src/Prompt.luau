@@ -1,7 +1,7 @@
 local MainParent = script.Parent
 local Packages = MainParent.Parent.roblox_packages
-local Types = require(MainParent.Types)
 local GenerateName = require(MainParent.GenerateName)
+local Types = require(MainParent.Types)
 local UI = require(Packages.ui)
 local New = UI.New
 local Spring = UI.Spring
@@ -9,9 +9,9 @@ local State = UI.State
 local Event = UI.Event
 local Cleanup = UI.Cleanup
 
+local Button = require(MainParent.Button)
 local Canvas = require(MainParent.Canvas)
 local Frame = require(MainParent.Frame)
-local Button = require(MainParent.Button)
 
 return function(Properties: Types.PrompProperties): Types.Prompt
 	local PromptSizeState = State(UDim2.fromScale(0.53, 0.42))
@@ -130,12 +130,12 @@ return function(Properties: Types.PrompProperties): Types.Prompt
 		ZIndex = 7,
 		BackgroundTransparency = 1,
 		SliceScale = 2,
-        Parent = AppLogo,
+		Parent = AppLogo,
 	})
 
 	New("UIAspectRatioConstraint")({
-        Parent = AppLogo,
-    })
+		Parent = AppLogo,
+	})
 
 	New("TextLabel")({
 		TextWrapped = true,
