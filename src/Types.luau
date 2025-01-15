@@ -16,6 +16,19 @@ export type Button = {
     Destroy: () -> (),
 }
 
+export type IconButtonProperties = {
+    Icon: string,
+    SubIcon: string?,
+    Position: UDim2,
+    Size: UDim2?,
+    OnClick: () -> (),
+}
+
+export type IconButton = {
+    Instance: ImageButton,
+    Destroy: () -> (),
+}
+
 export type CanvasProperties = {
     -- Special Properties
     Rounding: UDim | typeof(UI.Spring(...)) | nil,
