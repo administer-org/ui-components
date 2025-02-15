@@ -9,6 +9,7 @@ local State = UI.State
 local Event = UI.Event
 local Cleanup = UI.Cleanup
 
+
 return function(Properties: Types.ButtonProperties): (Types.Button)
     local IconSizeState = State(UDim2.fromScale(0.22, 0.34))
     local IconSizeSpring = Spring(IconSizeState, 0.5, 5)
