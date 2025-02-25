@@ -10,6 +10,9 @@
 
 </div>
 
+## ! Please note development of Administer's UI components have been stopped for the foreseeable future.
+> This repository's code will stay up but it will not be committed to until we resume component development.
+
 Welcome to the UI components repository! This is where you'll find all of Administer's internal UI components for use in apps.
 
 For more information on how to use these components for your apps, please [refer to the documentation.](https://docs.administer.notpyx.me)
